@@ -5,11 +5,16 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "dist",
+        "buildCommand": "npm run build"
       }
     }
   ],
   "routes": [
+    {
+      "src": "^/img/(.*)",
+      "dest": "/img/$1"
+    },
     {
       "handle": "filesystem"
     },
@@ -17,5 +22,10 @@
       "src": "/.*",
       "dest": "/"
     }
-  ]
+  ],
+  "static": {
+    "expiry": "1h"
+  },
+  "cleanUrls": true,
+  "trailingSlash": false
 }
