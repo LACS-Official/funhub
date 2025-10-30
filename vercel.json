@@ -23,9 +23,6 @@
       "dest": "/"
     }
   ],
-  "static": {
-    "expiry": "1h"
-  },
   "cleanUrls": true,
   "trailingSlash": false
 }
