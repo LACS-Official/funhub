@@ -1,0 +1,78 @@
+/* 基础样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tailwind CSS 兼容样式 */
+@import "tailwindcss";
+
+/* 全局颜色变量 */
+:root {
+  --primary: #ff6700;
+  --secondary: #333;
+}
+
+/* 响应式容器 */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 图片响应式 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 确保body占满整个视口高度 */
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* 基础表单样式 */
+form {
+  width: 100%;
+}
+
+/* 基础按钮样式 */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* 链接样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
