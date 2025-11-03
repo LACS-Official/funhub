@@ -20,9 +20,9 @@
     },
     {
       "src": "/.*",
-      "dest": "/"
+      "dest": "/",
+      "cleanUrls": true,
+      "trailingSlash": false
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
