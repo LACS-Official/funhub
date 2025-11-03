@@ -361,7 +361,7 @@ const MiPenUnlocker = () => {
               {/* 左侧图片 */}
               <div className="flex-1 flex items-center justify-center">
                 <img 
-                  src="/img/pen.png" 
+                  src="https://img.lacs.cc/i/25-11/03/未命名的设计.webp" 
                   alt="小米巨能写设备" 
                   className="max-w-full h-auto rounded-lg"
                 />
@@ -911,7 +911,6 @@ const MiPenUnlocker = () => {
         <nav className="bg-white shadow-md main-nav">
           <div className="container mx-auto px-4 py-3 flex justify-between items-center">
             <div className="flex items-center">
-              <img src="/mipen/img/logo.png" alt="小米巨能写" className="h-8 mr-3" />
               <h1 className="text-xl font-bold text-secondary">小米巨能写解锁工具</h1>
             </div>
             <div className="flex items-center user-info">
@@ -990,23 +989,6 @@ const MiPenUnlocker = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-xl shadow-custom p-6">
-              <h4 className="text-lg font-medium text-secondary mb-4">支持的设备型号</h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-gray-50 p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-                  <p className="font-medium text-gray-700">小米巨能写</p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-                  <p className="font-medium text-gray-700">小米巨能写Pro</p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-                  <p className="font-medium text-gray-700">小米巨能写Plus</p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-                  <p className="font-medium text-gray-700">小米巨能写Air</p>
-                </div>
-              </div>
-            </div>
           </div>
         </main>
         

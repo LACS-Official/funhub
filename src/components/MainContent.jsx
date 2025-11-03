@@ -50,33 +50,6 @@ const MainContent = ({
           </div>
         </div>
         
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-secondary mb-6">支持的设备型号</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-center space-x-3">
-              <i className="fa fa-check-circle text-green-500 text-xl"></i>
-              <span>小米触控笔 2</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <i className="fa fa-check-circle text-green-500 text-xl"></i>
-              <span>小米触控笔 2S</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <i className="fa fa-check-circle text-green-500 text-xl"></i>
-              <span>小米触控笔 Pro</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <i className="fa fa-check-circle text-green-500 text-xl"></i>
-              <span>小米触控笔 Pro 2</span>
-            </div>
-          </div>
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-            <p className="text-sm text-blue-800">
-              <i className="fa fa-info-circle mr-2"></i>
-              如果您的设备型号不在列表中，请联系客服获取支持。
-            </p>
-          </div>
-        </div>
       </section>
     </main>
   );

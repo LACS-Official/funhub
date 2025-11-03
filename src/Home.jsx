@@ -24,6 +24,7 @@ const Home = () => {
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             探索各种创意网页项目，体验不同的交互设计和功能实现
           </p>
+
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -66,10 +67,16 @@ const Home = () => {
       <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8 mt-12">
         <div className="container mx-auto px-4">
           <div className="text-center text-gray-600 dark:text-gray-300">
-            <p className="mb-2">© 2024 FunHub. 保留所有权利.</p>
+            <p className="mb-2">© 2025 领创工作室. 保留所有权利.</p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               一个专注于创意网页开发的集合平台
             </p>
+          </div>
+                    <div className="flex justify-center">
+            <a href="https://www.lacs.cc" className="text-primary font-medium flex items-center">
+              领创工作室官网
+              <i className="fa fa-arrow-right ml-2"></i>
+            </a>
           </div>
         </div>
       </footer>
