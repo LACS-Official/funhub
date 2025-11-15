@@ -23,6 +23,8 @@ const MiPenUnlocker = () => {
   const [showStep2Modal, setShowStep2Modal] = useState(false);
   const [showStep3Modal, setShowStep3Modal] = useState(false);
   const [canProceed, setCanProceed] = useState(false);
+  const [step1Deadline, setStep1Deadline] = useState(null);
+  const [remainingSeconds, setRemainingSeconds] = useState(5);
   const [unlockProgressStep, setUnlockProgressStep] = useState(0);
   const [unlockProgressPercentage, setUnlockProgressPercentage] = useState(0);
   const [currentStepText, setCurrentStepText] = useState('');
@@ -170,6 +172,8 @@ const MiPenUnlocker = () => {
     setShowPhysicalUnlockPage(false);
     setShowStep1Modal(true);
     setCanProceed(false);
+    setStep1Deadline(Date.now() + 5000);
+    setRemainingSeconds(5);
     
     // 强制阅读机制：5秒后允许点击同意
     setTimeout(() => {
@@ -228,6 +232,15 @@ const MiPenUnlocker = () => {
       });
     }, 50);
   };
+
+  useEffect(() => {
+    if (!showStep1Modal || canProceed || !step1Deadline) return;
+    const interval = setInterval(() => {
+      const left = Math.max(0, Math.ceil((step1Deadline - Date.now()) / 1000));
+      setRemainingSeconds(left);
+    }, 250);
+    return () => clearInterval(interval);
+  }, [showStep1Modal, canProceed, step1Deadline]);
   
   // 显示随机解锁结果
   const showRandomUnlockResult = () => {
@@ -370,9 +383,9 @@ const MiPenUnlocker = () => {
               {/* 右侧内容 */}
               <div className="flex-1">
                 <div className="mb-6">
-                  <h4 className="text-xl font-medium text-secondary mb-4">未连接笔身</h4>
+                  <h4 className="text-xl font-medium text-secondary mb-4">已连接笔身</h4>
                   <p className="text-gray-600 mb-4">
-                    请在笔身合盖状态下插入数据线连接笔身
+                    请保持笔身合盖状态下插入数据线连接电脑
                   </p>
                 </div>
                 
@@ -779,7 +792,7 @@ const MiPenUnlocker = () => {
                 onClick={handleStep1Agree}
                 disabled={!canProceed}
               >
-                {canProceed ? '同意' : `${Math.ceil(5 - (Date.now() % 5000) / 1000)}秒后可点击`}
+                {canProceed ? '同意' : `${remainingSeconds}秒后可点击`}
               </button>
             </div>
           </div>
