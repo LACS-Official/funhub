@@ -44,7 +44,7 @@ const MiPenUnlocker = () => {
   // 模拟用户数据
   const [mockUsers, setMockUsers] = useState(() => {
     const savedUsers = localStorage.getItem('mockUsers');
-    return savedUsers ? JSON.parse(savedUsers) : [{ username: 'user', password: '12345678', email: 'user@example.com' }];
+    return savedUsers ? JSON.parse(savedUsers) : [{ username: 'lacs', password: 'appfun', email: 'a@lacs.email' }];
   });
   
   // 引用
