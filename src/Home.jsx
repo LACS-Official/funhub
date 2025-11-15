@@ -29,7 +29,7 @@ const Home = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* 小米笔解锁工具卡片 */}
+            {/* 大米笔解锁工具卡片 */}
             <div 
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1" 
               onClick={() => window.location.href = '/mipen-unlocker'}
@@ -38,10 +38,10 @@ const Home = () => {
                 <div className="bg-primary/10 p-3 rounded-lg mr-4">
                   <i className="fa fa-unlock-alt text-primary text-2xl"></i>
                 </div>
-                <h3 className="text-xl font-semibold text-secondary">小米笔解锁工具</h3>
+                <h3 className="text-xl font-semibold text-secondary">大米笔解锁工具</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                解除小米巨能写设备的功能限制，获得完整的使用体验
+                解除大米巨能写设备的功能限制，获得完整的使用体验
               </p>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-500">工具类</span>

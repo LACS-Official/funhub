@@ -12,10 +12,10 @@ const Footer = () => {
               <div className="text-primary">
                 <i className="fa fa-pen-fancy text-xl"></i>
               </div>
-              <h3 className="text-lg font-semibold">小米触控笔解锁工具</h3>
+              <h3 className="text-lg font-semibold">大米触控笔解锁工具</h3>
             </div>
             <p className="text-gray-400 text-sm">
-              专为小米触控笔设计的解锁工具，帮助您轻松解锁设备限制，充分发挥触控笔的全部功能。
+              专为大米触控笔设计的解锁工具，帮助您轻松解锁设备限制，充分发挥触控笔的全部功能。
             </p>
           </div>
           
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} 小米触控笔解锁工具. 保留所有权利.</p>
+          <p>&copy; {currentYear} 大米触控笔解锁工具. 保留所有权利.</p>
           <div className="mt-2 space-x-4">
             <a href="#" className="hover:text-primary transition-colors">隐私政策</a>
             <a href="#" className="hover:text-primary transition-colors">用户协议</a>

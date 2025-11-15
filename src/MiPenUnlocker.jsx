@@ -375,7 +375,7 @@ const MiPenUnlocker = () => {
               <div className="flex-1 flex items-center justify-center">
                 <img 
                   src="https://img.lacs.cc/i/25-11/03/未命名的设计.webp" 
-                  alt="小米巨能写设备" 
+                  alt="大米巨能写设备" 
                   className="max-w-full h-auto rounded-lg"
                 />
               </div>
@@ -393,7 +393,7 @@ const MiPenUnlocker = () => {
                   <h5 className="font-medium text-gray-900 mb-2">解锁须知</h5>
                   <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                     <li>解锁后系统将失去安全保护，导致您的隐私被泄露或财产损失</li>
-                    <li>指纹识别、查找位置等依赖系统安全性的服务将变得不可靠</li>
+                    <li>纸质识别、查找位置等依赖系统安全性的服务将变得不可靠</li>
                     <li>解锁过程中遇到其他问题？点击查看FAQ</li>
                   </ol>
                 </div>
@@ -441,7 +441,7 @@ const MiPenUnlocker = () => {
           </div>
           <div className="p-6 overflow-y-auto privacy-content">
             <h4 className="text-lg font-medium mb-4">隐私政策</h4>
-            <p className="mb-4">感谢您使用小米巨能写解锁工具。保护您的隐私是我们的首要任务。本隐私政策旨在帮助您了解我们如何收集、使用和保护您提供的信息。</p>
+            <p className="mb-4">感谢您使用大米巨能写解锁工具。保护您的隐私是我们的首要任务。本隐私政策旨在帮助您了解我们如何收集、使用和保护您提供的信息。</p>
             <h5 className="text-md font-medium mt-6 mb-2">1. 信息收集</h5>
             <p className="mb-4">我们可能收集以下信息：</p>
             <ul className="list-disc pl-6 mb-4">
@@ -471,9 +471,9 @@ const MiPenUnlocker = () => {
             <p className="mb-4">如果您对本隐私政策有任何问题或疑虑，请联系我们。</p>
             
             <h4 className="text-lg font-medium mt-8 mb-4">用户协议</h4>
-            <p className="mb-4">请仔细阅读本用户协议，它规定了使用小米巨能写解锁工具的条款和条件。通过使用我们的服务，您同意遵守本协议的所有条款。</p>
+            <p className="mb-4">请仔细阅读本用户协议，它规定了使用大米巨能写解锁工具的条款和条件。通过使用我们的服务，您同意遵守本协议的所有条款。</p>
             <h5 className="text-md font-medium mt-6 mb-2">1. 服务描述</h5>
-            <p className="mb-4">小米巨能写解锁工具是一个在线服务，旨在帮助用户解锁小米巨能写设备的限制功能。</p>
+            <p className="mb-4">大米巨能写解锁工具是一个在线服务，旨在帮助用户解锁大米巨能写设备的限制功能。</p>
             <h5 className="text-md font-medium mt-6 mb-2">2. 使用条件</h5>
             <p className="mb-4">要使用我们的服务，您必须：</p>
             <ul className="list-disc pl-6 mb-4">
@@ -924,7 +924,7 @@ const MiPenUnlocker = () => {
         <nav className="bg-white shadow-md main-nav">
           <div className="container mx-auto px-4 py-3 flex justify-between items-center">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-secondary">小米巨能写解锁工具</h1>
+              <h1 className="text-xl font-bold text-secondary">大米巨能写解锁工具</h1>
             </div>
             <div className="flex items-center user-info">
               <span className="text-gray-600 mr-3">欢迎， <span className="font-medium text-primary logged-username">{currentUser?.username}</span></span>
@@ -942,7 +942,7 @@ const MiPenUnlocker = () => {
         <main className="container mx-auto px-4 py-8 main-content">
           <div className="text-center mb-12">
             <p className="text-gray-600 max-w-2xl mx-auto">
-              使用我们的解锁工具，轻松解除小米巨能写设备的功能限制，获得完整的使用体验。
+              使用我们的解锁工具，轻松解除大米巨能写设备的功能限制，获得完整的使用体验。
               解锁后，您将能够使用所有高级功能。
             </p>
           </div>
@@ -1003,6 +1003,10 @@ const MiPenUnlocker = () => {
             </div>
             
           </div>
+          <footer className="text-center text-gray-600 text-sm py-4">
+            &copy; 2025 领创工作室. All rights reserved.
+            <a href="https://www.lacs.cc" className="text-primary hover:underline">领创工作室官网</a>
+          </footer>
         </main>
         
       </>

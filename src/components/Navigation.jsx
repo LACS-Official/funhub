@@ -14,7 +14,7 @@ const Navigation = ({
             <div className="text-primary">
               <i className="fa fa-pen-fancy text-2xl"></i>
             </div>
-            <h1 className="text-xl font-bold text-secondary">小米触控笔解锁工具</h1>
+            <h1 className="text-xl font-bold text-secondary">大米触控笔解锁工具</h1>
           </div>
           
           <nav className="hidden md:flex space-x-6">

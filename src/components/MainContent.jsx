@@ -8,9 +8,9 @@ const MainContent = ({
     <main className="flex-grow container mx-auto px-4 py-8">
       <section className="max-w-4xl mx-auto mb-12">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-secondary mb-4">小米触控笔解锁工具</h1>
+          <h1 className="text-4xl font-bold text-secondary mb-4">大米触控笔解锁工具</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            专为小米触控笔设计的解锁工具，帮助您轻松解锁设备限制，充分发挥触控笔的全部功能。
+            专为大米触控笔设计的解锁工具，帮助您轻松解锁设备限制，充分发挥触控笔的全部功能。
           </p>
         </div>
         
@@ -22,7 +22,7 @@ const MainContent = ({
                 <span className="text-primary text-2xl font-bold">1</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">登录账号</h3>
-              <p className="text-gray-600">登录您的小米账号，以便验证设备所有权</p>
+              <p className="text-gray-600">登录您的大米账号，以便验证设备所有权</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
