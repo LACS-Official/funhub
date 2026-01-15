@@ -26,7 +26,7 @@ const useLoginLogic = (validUsername, validPassword, storageKey = 'login') => {
       document.body.classList.add('transition-opacity', 'duration-500');
 
       if (!accepted) {
-      } else if (!isLoggedIn) {
+      } else if (!localStorage.getItem(`${storageKey}_loggedInUser`)) {
         setShowLoginModal(true);
       }
     }, 10);
@@ -213,7 +213,7 @@ const PrivacyModal = ({ privacyAccepted, privacyCheck, setPrivacyCheck, onAccept
         </div>
         <div className="p-6 overflow-y-auto privacy-content">
           <h4 className="text-lg font-medium mb-4">隐私政策</h4>
-          <p className="mb-4">感谢您使用大米巨能写解锁工具。保护您的隐私是我们的首要任务。本隐私政策旨在帮助您了解我们如何收集、使用和保护您提供的信息。</p>
+          <p className="mb-4">感谢您使用本工具。保护您的隐私是我们的首要任务。本隐私政策旨在帮助您了解我们如何收集、使用和保护您提供的信息。</p>
           <h5 className="text-md font-medium mt-6 mb-2">1. 信息收集</h5>
           <p className="mb-4">我们可能收集以下信息：</p>
           <ul className="list-disc pl-6 mb-4">
@@ -243,9 +243,9 @@ const PrivacyModal = ({ privacyAccepted, privacyCheck, setPrivacyCheck, onAccept
           <p className="mb-4">如果您对本隐私政策有任何问题或疑虑，请联系我们。</p>
 
           <h4 className="text-lg font-medium mt-8 mb-4">用户协议</h4>
-          <p className="mb-4">请仔细阅读本用户协议，它规定了使用大米巨能写解锁工具的条款和条件。通过使用我们的服务，您同意遵守本协议的所有条款。</p>
+          <p className="mb-4">请仔细阅读本用户协议，它规定了使用本工具的条款和条件。通过使用我们的服务，您同意遵守本协议的所有条款。</p>
           <h5 className="text-md font-medium mt-6 mb-2">1. 服务描述</h5>
-          <p className="mb-4">大米巨能写解锁工具是一个在线服务，旨在帮助用户解锁大米巨能写设备的限制功能。</p>
+          <p className="mb-4">本工具是一个在线服务，旨在帮助用户解锁大米巨能写设备的限制功能。</p>
           <h5 className="text-md font-medium mt-6 mb-2">2. 使用条件</h5>
           <p className="mb-4">要使用我们的服务，您必须：</p>
           <ul className="list-disc pl-6 mb-4">
@@ -271,6 +271,7 @@ const PrivacyModal = ({ privacyAccepted, privacyCheck, setPrivacyCheck, onAccept
           <p className="mb-4">本协议受中国法律管辖，不考虑其法律冲突规定。</p>
           <h5 className="text-md font-medium mt-6 mb-2">8. 协议修改</h5>
           <p className="mb-4">我们可能会不时修改本协议。修改后的协议将在网站上发布，您继续使用我们的服务将视为接受修改后的条款。</p>
+          <h2 className="text-md font-medium mt-6 mb-2">以上都是假的，因为这只是个demo。我们只收集您的访问信息做统计</h2>
         </div>
         <div className="p-6 border-t">
           <div className="flex items-center mb-4">
@@ -289,7 +290,7 @@ const PrivacyModal = ({ privacyAccepted, privacyCheck, setPrivacyCheck, onAccept
             className={`w-full py-3 px-4 rounded-lg transition duration-300 font-medium ${privacyCheck
               ? 'bg-primary hover:bg-primary/90 text-white transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-primary/50'
               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-            }`}
+              }`}
             disabled={!privacyCheck}
             onClick={onAccept}
           >

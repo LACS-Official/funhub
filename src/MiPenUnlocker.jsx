@@ -24,7 +24,7 @@ const MiPenUnlocker = () => {
     handleLogin,
     handleLogout,
     handleModalClick
-  } = useLoginLogic(VALID_USERNAME, VALID_PASSWORD, 'miPenUnlocker');
+  } = useLoginLogic(VALID_USERNAME, VALID_PASSWORD, 'funhub_login');
 
   // 状态管理
   const [showUnlockModal, setShowUnlockModal] = useState(false);
