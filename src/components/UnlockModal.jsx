@@ -11,29 +11,16 @@ const UnlockModal = ({
   
   if (!showUnlockModal) return null;
   
-  const handleModalClick = (e) => {
-    if (unlockModalRef.current && e.target === unlockModalRef.current) {
-      setShowUnlockModal(false);
-    }
-  };
-  
   return (
     <div
       id="unlockModal"
       ref={unlockModalRef}
       className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
-      onClick={handleModalClick}
     >
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 transform transition-all scale-100">
         <div className="p-6 border-b">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center items-center">
             <h3 className="text-xl font-semibold text-secondary">设备解锁</h3>
-            <button
-              className="text-gray-400 hover:text-gray-600"
-              onClick={() => setShowUnlockModal(false)}
-            >
-              <i className="fa fa-times text-xl"></i>
-            </button>
           </div>
         </div>
         <div className="p-6">

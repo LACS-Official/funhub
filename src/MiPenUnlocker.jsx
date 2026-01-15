@@ -281,14 +281,8 @@ const MiPenUnlocker = () => {
       <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
         <div className="bg-white rounded-xl shadow-2xl max-w-4xl w-full mx-4">
           <div className="p-6 border-b">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center">
               <h3 className="text-xl font-semibold text-secondary">巨能写解锁工具 V1.0.0</h3>
-              <button
-                className="text-gray-400 hover:text-gray-600"
-                onClick={() => setShowPhysicalUnlockPage(false)}
-              >
-                <i className="fa fa-times text-xl"></i>
-              </button>
             </div>
           </div>
           <div className="p-6">

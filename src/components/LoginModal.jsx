@@ -13,29 +13,16 @@ const LoginModal = ({
   
   if (!showLoginModal) return null;
   
-  const handleModalClick = (e) => {
-    if (loginModalRef.current && e.target === loginModalRef.current) {
-      setShowLoginModal(false);
-    }
-  };
-  
   return (
     <div
       id="loginModal"
       ref={loginModalRef}
       className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100]"
-      onClick={handleModalClick}
     >
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 transform transition-all scale-100">
         <div className="p-6 border-b">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center items-center">
             <h3 className="text-xl font-semibold text-secondary">用户登录</h3>
-            <button
-              className="text-gray-400 hover:text-gray-600"
-              onClick={() => setShowLoginModal(false)}
-            >
-              <i className="fa fa-times text-xl"></i>
-            </button>
           </div>
         </div>
         <div className="p-6">
