@@ -19,7 +19,7 @@ const Home = () => {
       </nav>
 
       {/* 主要内容 */}
-      <main className="container mx-auto px-4 py-12 bg-gradient-to-br from-orange-50 via-white to-red-50">
+      <main className="container mx-auto px-4 py-12 pb-[25vh] bg-gradient-to-br">
         <div className="text-center mb-12">
           <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg mb-6 animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 cursor-default">
             AI太好用了你们知道吗
@@ -34,7 +34,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1 border border-gray-100"
+              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1"
               onClick={() => window.location.href = '/mipen-unlocker'}
             >
               <div className="flex items-center mb-4">
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
             {/* 大米巨能写设备电池卡片 */}
             <div
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1 border border-gray-100"
+              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1"
               onClick={() => window.location.href = '/mi-rainbow-battery'}
             >
               <div className="flex items-center mb-4">
