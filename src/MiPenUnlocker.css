@@ -920,3 +920,49 @@ input:-ms-input-placeholder {
 input::-ms-input-placeholder {
   color: #9ca3af;
 }
+
+/* 搜索动画 - 双层扩散圆环呼吸脉冲 */
+@keyframes searchPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes searchRing1 {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes searchRing2 {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.search-ring-1 {
+  animation: searchRing1 2s ease-out infinite;
+}
+
+.search-ring-2 {
+  animation: searchRing2 2s ease-out infinite 1s;
+}
+
+.search-icon-container {
+  animation: searchPulse 2s ease-in-out infinite;
+}

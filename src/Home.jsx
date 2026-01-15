@@ -1,10 +1,11 @@
 import React from 'react';
+import Footer from './components/Footer.jsx';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* 导航栏 */}
-      <nav className="bg-white dark:bg-gray-800 shadow-md">
+      <nav className="bg-white shadow-md border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-primary">
@@ -18,10 +19,13 @@ const Home = () => {
       </nav>
 
       {/* 主要内容 */}
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-12 bg-gradient-to-br from-orange-50 via-white to-red-50">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-secondary mb-4">Welcome to FunHub</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg mb-6 animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 cursor-default">
+            AI太好用了你们知道吗
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to FunHub</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             探索各种创意网页项目，体验不同的交互设计和功能实现
           </p>
 
@@ -29,57 +33,54 @@ const Home = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* 大米笔解锁工具卡片 */}
-            <div 
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1" 
+            <div
+              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1 border border-gray-100"
               onClick={() => window.location.href = '/mipen-unlocker'}
             >
               <div className="flex items-center mb-4">
-                <div className="bg-primary/10 p-3 rounded-lg mr-4">
-                  <i className="fa fa-unlock-alt text-primary text-2xl"></i>
+                <div className="bg-orange-500/10 p-3 rounded-lg mr-4">
+                  <i className="fa fa-unlock-alt text-orange-500 text-2xl"></i>
                 </div>
-                <h3 className="text-xl font-semibold text-secondary">大米笔解锁工具</h3>
+                <h3 className="text-xl font-semibold text-gray-900">大米笔解锁工具</h3>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-600 mb-4">
                 解除大米巨能写设备的功能限制，获得完整的使用体验
               </p>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-500">工具类</span>
-                <button className="text-primary hover:text-primary/80 font-medium flex items-center">
+                <button className="text-orange-500 hover:text-orange-600 font-medium flex items-center">
                   立即体验
                   <i className="fa fa-arrow-right ml-2"></i>
                 </button>
               </div>
             </div>
-
-            {/* 占位卡片 - 可用于未来扩展 */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex items-center justify-center">
-              <div className="text-center">
-                <i className="fa fa-plus-circle text-4xl text-gray-300 mb-4"></i>
-                <p className="text-gray-400">更多创意项目即将推出</p>
+            {/* 大米巨能写设备电池卡片 */}
+            <div
+              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:-translate-y-1 border border-gray-100"
+              onClick={() => window.location.href = '/mi-rainbow-battery'}
+            >
+              <div className="flex items-center mb-4">
+                <div className="bg-orange-500/10 p-3 rounded-lg mr-4">
+                  <i className="fa fa-battery-full text-orange-500 text-2xl"></i>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">大米巨能写设备电池</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                查看大米巨能写设备的电池状态和健康信息
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-500">工具类</span>
+                <button className="text-orange-500 hover:text-orange-600 font-medium flex items-center">
+                  立即体验
+                  <i className="fa fa-arrow-right ml-2"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </main>
 
-      {/* 页脚 */}
-      <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8 mt-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-gray-600 dark:text-gray-300">
-            <p className="mb-2">© 2025 领创工作室. 保留所有权利.</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              一个专注于创意网页开发的集合平台
-            </p>
-          </div>
-                    <div className="flex justify-center">
-            <a href="https://www.lacs.cc" className="text-primary font-medium flex items-center">
-              领创工作室官网
-              <i className="fa fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
